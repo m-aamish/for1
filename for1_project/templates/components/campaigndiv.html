@@ -1,0 +1,104 @@
+<div class="flex items-center mb-2 justify-between campaign1div">
+
+    <div class="flex items-center">
+        <div class="bg-black p-2  rounded h-2 ">
+        </div>
+        <p class="pl-4 font-semibold">Campaign</p>
+    </div>
+    {% comment %} <div class="flex bg-gray-200 rounded-full items-center px-2 justify-between ml-[100px]">
+        <div>
+        <p class=" text-[14px] pr-1">Weekly</p>
+        </div>
+        <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg>
+        </div>
+    </div> {% endcomment %}
+    <div class="relative select-none bg-gray-200 rounded-full items-center px-2" id="dropdownButton">
+        <div
+        onclick= toggleDropdown()
+        class="border-solid flex items-center text-bold"
+        >
+        Weekly
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill ml-2" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg>
+        </div>
+        <div 
+        id="dropdown"
+        class="rounded hidden absolute bg-white border p-2"
+        >
+            <div class="cursor-pointer"> Account</div>
+            <div class="cursor-pointer"> Account</div>
+            <div class="cursor-pointer"> Account</div>
+        </div>
+    </div>
+</div>
+<div>
+    <p class="text-[18px]">Last 30 Days Campaign</p>
+</div>
+
+
+{% comment %} <img src="static/src/graph2.png" class="w-full" alt="gr"/> {% endcomment %}
+
+<div class="flex justify-between border-t-2 items-center">
+    <p>Digital Marketing</p>
+    <div class="bg-gray-100 w-48 h-12 flex digidiv">
+        <div class="bg-blue-200 w-24 text-blue-200 my-2 ml-2 rounded-l-lg">o</div>
+        <div class="border border-gray-200"></div>
+    </div>
+    <div>
+        <p>-$290.87 USD</p>
+        <p class="text-red-500 text-[12px] text-end">-56.12%</p>
+    </div>
+</div>
+
+<div class="flex justify-between border-t-2 items-center">
+    <p>SEO Company</p>
+    <div class="bg-gray-100 w-48 h-12 flex ml-[18px] digidiv">
+        <div class="bg-gray-100 w-24 text-gray-100 my-2 mr-[20px] rounded-r-lg">o</div>        
+        <div class="border border-gray-200"></div>
+        <div class="bg-blue-400 w-24 text-blue-400 my-2 mr-2 rounded-r-lg">o</div>
+    </div>
+    <div>
+        <p>$125.32 USD</p>
+        <p class="text-green-500 text-[12px] text-end">56.12%</p>
+    </div>
+</div>
+
+<div class="flex justify-between border-t-2 items-center">
+    <p>Remarketing</p>
+    <div class="bg-gray-100 w-48 h-12 flex ml-[40px] digidiv">
+        <div class="bg-blue-200 w-12 text-blue-200 my-2 ml-[50px] rounded-l-lg bluediv">o</div>        
+        <div class="border border-gray-200"></div>
+        
+    </div>
+    <div>
+        <p>-$156.73 USD</p>
+        <p class="text-red-500 text-[12px] text-end">-32.49%</p>
+    </div>
+</div>
+
+<div class="flex justify-between border-t-2 border-b-2 items-center">
+    <p>PPC Management</p>
+    <div class="bg-gray-100 w-48 h-12 flex ml-[4px] digidiv">
+        <div class="bg-blue-200 w-[60px] text-blue-200 my-2 rounded-l-lg ml-[36px] bluediv">o</div>        
+        <div class="border border-gray-200"></div>
+    </div>
+    <div>
+        <p>-$250.87 USD</p>
+        <p class="text-red-500 text-[12px] text-end">-36.42%</p>
+    </div>
+</div>
+
+
+
+
+<script>
+    function toggleDropdown(){
+        let dropdown= document.querySelector('#dropdownButton #dropdown');
+        dropdown.classList.toggle("hidden");
+
+    }
+</script>

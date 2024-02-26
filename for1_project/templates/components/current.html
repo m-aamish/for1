@@ -1,0 +1,81 @@
+<div class="flex items-center mb-2">
+
+    <div class="bg-black p-2 border rounded h-2">
+    </div>
+    <p class="pl-4 font-semibold">Current Business Revenue</p>
+</div>
+<div class="flex justify-between weeklydiv">
+    <p class="text-[14px]">How's Company Revenue Doing?</p>
+    {% comment %} <div class="flex bg-gray-200 rounded-full items-center px-2 justify-between ml-[100px]">
+        <div>
+        <p class=" text-[14px] pr-1">Weekly</p>
+        </div>
+        <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg>
+        </div>
+    </div> {% endcomment %}
+
+    <div class="relative select-none bg-gray-200 rounded-full items-center px-2 weekly" id="dropdownButton">
+        <div
+        onclick= toggleDropdown()
+        class="border-solid flex items-center text-semibold weekly1"
+        >
+        Weekly
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill ml-2" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg>
+        </div>
+        <div 
+        id="dropdown"
+        class="rounded hidden absolute bg-white border p-1 weekly"
+        >
+            <div class="cursor-pointer"> Account</div>
+            <div class="cursor-pointer"> Account</div>
+            <div class="cursor-pointer"> Account</div>
+        </div>
+    </div>
+</div>
+{% comment %} <img src="static/src/graph.png" class="h-[250px] w-full px-[25px]" alt="graph"/> {% endcomment %}
+
+<div class="flex relative">
+    <div class="mt-4 border-r-2 pr-2">
+        <p class="text-[10px] pb-[25px]">$50M</p>
+        <p class="text-[10px] pb-[25px]">$40M</p>
+        <p class="text-[10px] pb-[25px]">$30M</p>
+        <p class="text-[10px] pb-[25px]">$20M</p>
+        <p class="text-[10px] pb-[25px]">$10M</p>
+        <p class="text-[10px]">$0M</p>
+    </div>
+    <div class="bg-blue-400 absolute p-1 rounded-r-lg left-[36px] top-[20px]">
+        <p class="text-[12px]">Forecast $50M</p>
+    </div>
+    <div class="absolute left-[122px] top-[32px] linediv">
+        <hr class="h-px bg-blue-400 border-0 w-[350px] line">
+    </div>
+    <div class="bg-gray-200 absolute p-1 rounded-r-lg left-[36px] top-[70px]">
+        <p class="text-[12px]">Planned $40M</p>
+    </div>
+    <img src="static/src/best.png" class="h-36 w-64 mt-[90px] graph"/>
+    <img src="static/src/best1.png" class="h-48 w-48 mt-[45px] graph1div"/>
+    <div class="bg-black py-1.5 px-3 rounded-full absolute top-[198px] left-[251px] bestvalue">
+        <p class="text-[12px] text-white">Best Value</p>
+    </div>
+</div>
+
+<div class="flex ml-8 jandiv">
+    <p class="text-[10px] mr-[20px] jan">Jan</p>
+    <p class="text-[10px] mr-[20px] jan">Feb</p>
+    <p class="text-[10px] mr-[20px] jan">Mar</p>
+    <p class="text-[10px] mr-[20px] jan">Apr</p>
+    <p class="text-[10px] mr-[20px] jan">May</p>
+    <p class="text-[10px] mr-[20px] jan">Jun</p>
+    <p class="text-[10px] mr-[20px] jan">Jul</p>
+    <p class="text-[10px] mr-[20px] jan">Aug</p>
+    <p class="text-[10px] mr-[20px] jan">Sep</p>
+    <p class="text-[10px] mr-[20px] jan">Oct</p>
+    <p class="text-[10px] mr-[20px] jan">Nov</p>
+    <p class="text-[10px]">Dec</p>
+
+</div>

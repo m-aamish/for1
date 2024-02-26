@@ -1,0 +1,29 @@
+<div class="flex items-center mb-2">
+
+    <div class="bg-black p-2  rounded h-2 ">
+    </div>
+    <p class="pl-4 font-semibold">Top Deals</p>
+</div>
+
+<p class="pb-2">How's Company Revenue Doing?</p>
+
+<table class="w-full">
+    <thead class="bg-black text-white">
+      <tr>
+        <th scope="col" class="px-2 py-2 rounded-tl-lg text-[14px] customerid">CustomerID</th>
+        <th class="px-2 py-2 text-[14px] customerid">First Item</th>
+        <th class="px-2 py-2 text-[14px] customerid">Date</th>
+        <th scope="col" class="px-2 py-2 rounded-tr-lg text-[14px] customerid">Purchase</th>
+      </tr>
+    </thead>
+    <tbody>  
+      {% for deal in top_deals %}
+        <tr class="p-2 table1">
+            <td class="pl-8 py-2 text-[12px] table2">{{ deal.cusid }}</td>
+            <td class="pl-8 pl-4 text-[12px] table2">{{ deal.firstitem }}</td>
+            <td class="pl-8 py-2 text-[12px] table2">{{ deal.date }}</td>
+            <td class="pl-8 pl-4 text-[12px] table2">${{ deal.purchase }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+  </table>

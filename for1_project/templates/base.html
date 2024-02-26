@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="static/src/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <!-- Before your closing </body> tag -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  
+  <style>
+    .leaflet-tile {
+      filter: grayscale(80%) brightness(90%);
+    }
+    @media only screen and (max-width: 768px) {
+      .platform{
+        width:300px;
+      }
+      .platformtik{
+        left:0px;
+      }
+      .platformtik1{
+        margin-top:10px;
+        margin-left:60px;
+      }
+      .platformtik1div{
+        margin-top:65px;
+      }
+      .platformtik2div{
+        margin-top:0px;
+      }
+      .platformtik3div{
+        margin-top:80px;
+      }
+      .bestvalue{
+        left:140px;
+        top:180px;
+        padding-left:1px;
+        padding-right:2px;
+        padding-left:1px;
+        padding-left:1px;
+      }
+      .weekly{
+        padding:0px;
+      }
+      
+      .customerid{
+        padding:0px;
+        font-size:8px;
+      }
+      .table1{
+        padding:0px;
+      }
+      .table2{
+        padding:0px;
+        font-size:10px;
+      }
+      .campaign1div{
+        flex-direction:column;
+      }
+      .digidiv{
+        width:30px;
+        margin-left:0px;
+      }
+      .monthdiv{
+        padding:0px;
+      }
+      .month{
+        padding-right:5px;
+      }
+      .line{
+        width:30px;
+      }
+      .weeklydiv{
+        flex-direction: column;
+      }
+      .weekly1{
+        padding-top:5px;
+        padding-left:35px;
+      }
+      .graph{
+        width:130px;
+      }
+      .graph1div{
+        display:none;
+      }
+      .jan{
+        margin:0px;
+      }
+      .jandiv{
+        display:none;
+      }
+      .currentmaindiv{
+        height:450px;
+      }
+      .tiksecond{
+        display:none;
+      }
+      .bluediv{
+        width:10px;
+        margin-left:0px;
+      }
+      
+      
+  }
+
+
+  </style>
+</head>
+<body>
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>

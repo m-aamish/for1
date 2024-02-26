@@ -1,0 +1,86 @@
+{% comment %} <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 px-4">
+
+    <div class="grid grid-cols-3 gap-4 px-4 w-[900px]">
+        <div class="h-24 bg-black rounded-2xl">
+            {%include 'components/audience1.html'%}  
+        </div>
+        <div class="h-24 bg-gray-50 rounded-2xl">
+            {%include 'components/follower.html'%}
+        </div>
+        <div class="h-24 bg-gray-50 rounded-2xl">
+            {%include 'components/campaign.html'%}
+        </div>
+        <div class="h-48 w-[420px] bg-gray-50 rounded-2xl pl-4 pt-2">
+            {% include 'components/current.html' %}
+        </div>
+        <div class="h-48  bg-gray-50 rounded-2xl w-[420px] ml-[144px] pl-4 pt-2">
+            {% include 'components/customergrowth.html' %}
+        </div>
+    </div>
+    
+    <div class="px-4 ml-[210px]"> 
+        <div class=" bg-gray-50 mb-2 rounded-2xl h-[147px]">
+
+        </div>
+        <div class="  bg-gray-50 rounded-2xl h-[147px] pl-4 pt-2">
+            {% include 'components/saleteamperformance.html' %}
+        </div>   
+    </div>
+
+</div>
+
+<div class="px-4">
+    <div class="grid grid-cols-3 gap-4 px-4 mt-4">
+        <div class="h-48 bg-gray-50 rounded-2xl pl-4 pt-2">
+            {% include 'components/platform.html' %}
+        </div>
+        <div class="h-48 bg-gray-50 rounded-2xl pl-4 pt-2">
+            {% include 'components/campaigndiv.html' %}
+        </div>
+        <div class="h-48 bg-gray-50 rounded-2xl pl-4 pt-2">
+            {% include 'components/topdeal.html' %}
+        </div>
+    </div>
+</div> {% endcomment %}
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 px-8">
+    <div class=" bg-white  col-span-2">
+        <div class="grid grid-cols-3 gap-4">
+            <div class="h-24 bg-black rounded-2xl">
+                {%include 'components/audience1.html'%}  
+            </div>
+            
+            <div class="h-24 bg-gray-50 rounded-2xl">
+                {%include 'components/follower.html'%}
+            </div>
+            <div class="h-24 bg-gray-50 rounded-2xl">
+                {%include 'components/campaign.html'%}
+            </div>
+        </div>
+    </div>
+    <div class=" row-span-2 bg-gray-50 rounded-2xl px-4 pt-2 pb-4">
+       {% include 'components/sales.html' %}
+    </div>
+    <div class=" col-span-2 row-span-3">
+        <div class="grid grid-cols-2 gap-4">
+            <div class="h-[315px]  bg-gray-50 rounded-2xl px-4 pt-2 currentmaindiv">
+                {% include 'components/current.html' %}
+            </div>
+            <div class=" h-[315px] bg-gray-50 rounded-2xl px-4 pt-2 currentmaindiv">
+                {% include 'components/customergrowth.html' %}
+            </div>
+        </div>
+    </div>
+    <div class=" bg-gray-50 rounded-2xl row-span-2 px-4 pt-4 pb-4">
+        {% include 'components/saleteamperformance.html' %}
+    </div>
+    <div class=" bg-gray-50 rounded-2xl pl-4 pt-4 row-span-2">
+        {% include 'components/platform.html' %}
+    </div>
+    <div class=" bg-gray-50 rounded-2xl px-4 pt-4 row-span-2">
+        {% include 'components/campaigndiv.html' %}
+    </div>
+    <div class=" bg-gray-50 rounded-2xl px-4 pt-2 pb-2 row-span-2">
+        {% include 'components/topdeal.html' %}
+    </div>
+
+</div> 
